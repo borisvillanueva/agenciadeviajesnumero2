@@ -6,8 +6,6 @@ const db = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.D
     host: process.env.DB_HOST,
     port: '3306',
     dialect: 'mysql',
-    // Increase the connection timeout (in milliseconds)
-    connectionTimeout: 10000, // 10 seconds
     define: {
         timestamps: false
     },
