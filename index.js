@@ -3,10 +3,6 @@ import express from 'express';
 import router from './routes/index.js';
 import db from './config/db.js';
 
-
-
-console.log(process.env.DB_HOST)
-
 const app = express();
 
 //Conectar la base de datos
