@@ -12,7 +12,7 @@ db.authenticate()
 
 
 //Definir puerto
-const port = process.env.PORT || 6100;
+const port = process.env.PORT || 4000;
 
 //Habilitar PUG
 app.set('view engine', 'pug');
@@ -36,6 +36,6 @@ app.use(express.static('public'));
 app.use('/', router);
 
 
-app.listen(port, '0.0.0.0', () => {
+app.listen(port, () => {
     console.log(`El Servidor esta funcionando en el puerto ${port}`)
 })
